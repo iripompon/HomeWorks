@@ -3,8 +3,13 @@ package main
 import "fmt"
 
 func main() {
+	var m int
+	var n int
+	fmt.Println("Введите размер доски MxN")
+	fmt.Print("Введите параметр M пробел N:")
+	fmt.Scanf("%d %d", &m, &n)
 
-	PrintChessBoard(8, 8)
+	PrintChessBoard(m, n)
 }
 
 func PrintChessBoard(a int, b int) {
